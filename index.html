@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Calculadora Geométrica</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/equacao-2º-grau.css" rel="stylesheet">
+
+
+        <style>
+            .container {
+              position: relative;
+              top: 18px;
+              left: -7px;
+            }
+            
+            .paragrafo-resultado, .bad {
+              position: absolute;
+              bottom: 73px;
+              right: 52px;
+              font-size: 18px;
+            }
+
+            .titulo {
+                position: relative;
+                top: 40px;
+                left: -9px;
+                font-size: 14px;
+            } 
+
+            
+            .titulo_2 {
+                position: relative;
+                top: 40px;
+                left: 22px;
+                font-size: 25px;
+                color: blue;
+            }  
+            
+            .coe_1 {
+                position: relative;
+                bottom: -85px;
+                left: -32px;
+            }  
+            
+            </style>
+<!--
+
+TemplateMo 585 Barber Shop
+
+https://templatemo.com/tm-585-barber-shop
+
+-->
+    </head>
+    
+    <body>
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <nav id="sidebarMenu" class="col-md-4 col-lg-3 d-md-block sidebar collapse p-0">
+
+                    <div class="position-sticky sidebar-sticky d-flex flex-column justify-content-center align-items-center">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/templatemo-barber-logo.png" class="logo-image img-fluid" align="">
+                        </a>
+
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" id="calc1" href="index.html">Equação 2º Grau</a>
+                            </li>
+                             
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" id="calc2" href="imc.html">Triângulos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_3">CÁLCULO 2</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_4">CÁLCULO 3</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_5">CÁLCULO 4</a>
+                            </li> 
+                        </ul>
+                    </div>
+                </nav>
+                
+                <div class="col-md-8 ms-sm-auto col-lg-9 p-0">
+                    <section class="container d-flex justify-content-center align-items-center" id="calc1">
+                    
+                        <form action="/" id="formulario" method="POST">
+
+                            <div class="titulo"><strong>CALCULADORA DE EQUAÇÃO DO 2º GRAU</strong></div>
+                           <div class="coe_1">
+                                <label for="valorA" id="termo_a"><strong>Coeficiente A:</strong></label>
+                                <input type="text" id="valorA" name="valorA">
+                                    
+                                <label for="valorB" id="termo_b"><strong>Coeficiente B:</strong></label>
+                                <input type="text" id="valorB" name="valorB">
+                
+                                <label for="valorC" id="termo_c"><strong>Coeficiente C:</strong></label>
+                                <input type="text" id="valorC" name="valorC">
+                                <button type='submit' class="calc"><strong>Calcular</strong></button>
+                            </div>
+                        </form>
+                        <div id="resultado"></div>
+
+                           
+                    </section>
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/click-scroll.js"></script>
+       <script src="js/custom.js"></script> 
+        <!---<script src="js/calc2.js"></script>--->
+ 
+
+    </body>
+</html>
